@@ -1,0 +1,25 @@
+{
+  "name": "brevie-wedding",
+  "version": "1.0.0",
+  "description": "Bryan and Evie's wedding website",
+  "main": "app.js",
+  "scripts": {
+    "start": "node node_modules/nodemon/bin/nodemon.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aqualad/brevie-wedding.git"
+  },
+  "author": "aqualad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aqualad/brevie-wedding/issues"
+  },
+  "homepage": "https://github.com/aqualad/brevie-wedding#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "hbs": "^4.0.0",
+    "nodemon": "^1.9.0"
+  }
+}
