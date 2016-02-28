@@ -1,0 +1,9 @@
+{
+    "watch": [
+        "routes/",
+        "views/",
+        "public/javascripts",
+        "public/stylesheets"
+    ],
+    "ext": "js json hbs css"
+}
