@@ -2,7 +2,7 @@
   "name": "brevie-wedding",
   "version": "1.0.0",
   "description": "Bryan and Evie's wedding website",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "node node_modules/nodemon/bin/nodemon.js",
     "test": "echo \"Error: no test specified\" && exit 1"
