@@ -1,0 +1,7 @@
+Add build process using Gulp to:
+ - Concatenate JS
+ - Minify and Optimize JS with Closure Compiler
+ - Optimize CSS (concat? minify?)
+ - Live reload browser on save
+
+
