@@ -1,8 +1,3 @@
-var express = require('express');
-var router = express.Router();
+'use strict';
 
-router.get('/', function (req, res) {
-  res.render('index', {title: "Evie McMahon and Bryan Dodd Wedding - September 9th, 2016"});
-});
-
-module.exports = router;
+var weddingApp = angular.module('weddingApp', []);
