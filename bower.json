@@ -1,0 +1,22 @@
+{
+  "name": "brevie-wedding",
+  "description": "Bryan and Evie's wedding website",
+  "main": "routes/index.js",
+  "authors": [
+    "aqualad"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/aqualad/brevie-wedding",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0"
+  }
+}
