@@ -3,12 +3,11 @@ var path = require('path');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'app/views'));
+app.set('views', path.join(__dirname, 'public/app/views'));
 app.set('view engine', 'hbs');
 
 // Route to static files
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/app', express.static(__dirname + '/app'));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 app.get('/', function (req, res) {
