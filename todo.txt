@@ -1,3 +1,11 @@
+== Next ==
+
+Add the footer back to a view somewhere
+
+
+
+==== Eventually ====
+
 Add build process using Gulp to:
  - Concatenate JS
  - Minify and Optimize JS with Closure Compiler
