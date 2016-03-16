@@ -5,3 +5,13 @@ Add build process using Gulp to:
  - Live reload browser on save
 
 
+Move JS files used by the template into bower
+ - custom.js
+ - jQuery.min.js
+   - jQuery.backstretch.min.js
+   - jQuery.scrollTo-1.4.3-min.js
+   - jQuery.nav.min.js
+   - jQuery.flexslider.js
+ - foundation.min.js
+   - foundation.abide.js
+ - If possible, Google Maps plugin
