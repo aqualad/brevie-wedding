@@ -36,7 +36,7 @@ $(document).ready(function() {
 			"images/placeholder-1.jpg",
 			"images/placeholder-2.jpg",
 
-			], {duration: 5000, fade: 1000});
+			], {duration: 5000, fade: 1000, alignX: 'left'});
 	}
 
 	backStrech();
