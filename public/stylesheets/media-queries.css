@@ -8,6 +8,7 @@
 
 --------------------------------------------------------------------------------------
 
+	0. Screens that are below 768px
 	1. Screens that are at least 768px
 	2. Screens that are at least 940px
 	3. Screens that are at least 1280px
@@ -16,6 +17,24 @@
 	6. Retina Image Support
 
 -------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------*/
+/*	0. Styles for screens that are less than 768px; */
+/*-----------------------------------------------------------------------------------*/
+@media only screen and (max-width: 48em) {
+	.videoWrapper {
+		position: relative;
+		padding-bottom: 80%;
+		height: 0;
+	}
+	.videoWrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 10%;
+		width: 80%;
+		height: 100%;
+	}
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*	1. Styles for screens that are at least 768px; */
@@ -121,6 +140,20 @@
 		text-align: right;
 	}
 
+	/*==== Save the Date Video ====*/
+	.videoWrapper {
+		position: relative;
+		padding-bottom: 80%;
+		height: 0;
+	}
+	.videoWrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 10%;
+		width: 80%;
+		height: 100%;
+	}
+
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -137,6 +170,19 @@
 		border: none;
 	}
 
+	/*==== Save the Date Video ====*/
+	.videoWrapper {
+		position: relative;
+		padding-bottom: 50%; /* square */
+		height: 0;
+	}
+	.videoWrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 25%;
+		width: 50%;
+		height: 100%;
+	}
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -188,6 +234,12 @@
 	}
 	.top-bar {
 		display: none!important;
+	}
+
+	/*==== Save the Date Video ====*/
+	.videoWrapper iframe {
+		width: 640px;
+		height: 640px;
 	}
 }
 
