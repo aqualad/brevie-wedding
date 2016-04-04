@@ -24,14 +24,14 @@
 @media only screen and (max-width: 48em) {
 	.videoWrapper {
 		position: relative;
-		padding-bottom: 80%;
+		padding-bottom: 72%;
 		height: 0;
 	}
 	.videoWrapper iframe {
 		position: absolute;
 		top: 0;
-		left: 10%;
-		width: 80%;
+		left: 14%;
+		width: 72%;
 		height: 100%;
 	}
 }
@@ -143,14 +143,14 @@
 	/*==== Save the Date Video ====*/
 	.videoWrapper {
 		position: relative;
-		padding-bottom: 80%;
+		padding-bottom: 46%;
 		height: 0;
 	}
 	.videoWrapper iframe {
 		position: absolute;
 		top: 0;
-		left: 10%;
-		width: 80%;
+		left: 27%;
+		width: 46%;
 		height: 100%;
 	}
 
@@ -173,14 +173,14 @@
 	/*==== Save the Date Video ====*/
 	.videoWrapper {
 		position: relative;
-		padding-bottom: 50%; /* square */
+		padding-bottom: 40%; /* square */
 		height: 0;
 	}
 	.videoWrapper iframe {
 		position: absolute;
 		top: 0;
-		left: 25%;
-		width: 50%;
+		left: 30%;
+		width: 40%;
 		height: 100%;
 	}
 }
@@ -239,14 +239,14 @@
 	/*==== Save the Date Video ====*/
 	.videoWrapper {
 		position: relative;
-		padding-bottom: 70%;
+		padding-bottom: 40%;
 		height: 0;
 	}
 	.videoWrapper iframe {
 		position: absolute;
 		top: 0;
-		left: 15%;
-		width: 70%;
+		left: 30%;
+		width: 40%;
 		height: 100%;
 	}
 }
