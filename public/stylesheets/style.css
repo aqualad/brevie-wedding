@@ -276,6 +276,9 @@ aside .postfix.button {
 	display: block;
 	padding: 1.25em;
 }
+.side-nav li a:nth-of-type(1) {
+	border-top: 1px solid rgba( 222, 103, 95, 0.9);
+}
 .side-nav li.active a,
 .side-nav li a:hover {
 	background-color:#fff;
