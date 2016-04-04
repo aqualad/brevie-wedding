@@ -15,7 +15,7 @@ weddingApp
                 .when('/', {
                     controller: 'HomeController',
                     controllerAs: 'home',
-                    templateUrl: '/app/views/partials/home.hbs'
+                    templateUrl: '/app/templates/partials/home.hbs'
                 });
         }
     ]);

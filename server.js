@@ -3,7 +3,7 @@ var path = require('path');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'public/app/views'));
+app.set('views', path.join(__dirname, 'public/app/templates'));
 app.set('view engine', 'hbs');
 
 // Route to static files
