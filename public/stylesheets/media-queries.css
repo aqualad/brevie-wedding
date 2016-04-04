@@ -237,9 +237,17 @@
 	}
 
 	/*==== Save the Date Video ====*/
+	.videoWrapper {
+		position: relative;
+		padding-bottom: 70%;
+		height: 0;
+	}
 	.videoWrapper iframe {
-		width: 640px;
-		height: 640px;
+		position: absolute;
+		top: 0;
+		left: 15%;
+		width: 70%;
+		height: 100%;
 	}
 }
 
