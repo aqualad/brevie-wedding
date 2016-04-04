@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
-app.listen(80, function () {
+app.listen(3000, function () {
   console.log('WeddingApp listening on port 3000!');
 });
 
