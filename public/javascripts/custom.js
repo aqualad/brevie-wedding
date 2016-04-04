@@ -33,8 +33,8 @@ $(document).ready(function() {
 
 	function backStrech() {
 		$("aside").backstretch([
-			"images/placeholder-1.jpg",
-			"images/placeholder-2.jpg",
+			// "images/photo-slide-1.jpg",
+			"images/photo-slide-2.jpg",
 
 			], {duration: 5000, fade: 1000, alignX: 'left'});
 	}
