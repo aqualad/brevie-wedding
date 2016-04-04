@@ -3,9 +3,15 @@
 var weddingControllers = angular.module('weddingControllers', []);
 
 weddingControllers
-    .controller('HomeController', ['$scope',
+    .controller('HomeController', ['$scope', '$location',
+        function ($scope, $location) {
+            $location.path('/save-the-date');
+            // $scope.welcome = 'Invite You to Celebrate At their Wedding';
+        }
+    ])
+    .controller('SaveTheDateController', ['$scope',
         function ($scope) {
-            $scope.welcome = 'Invite You to Celebrate At their Wedding';
+
         }
     ])
     .directive('weddingHeader', function() {

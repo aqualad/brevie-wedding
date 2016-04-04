@@ -16,6 +16,11 @@ weddingApp
                     controller: 'HomeController',
                     controllerAs: 'home',
                     templateUrl: '/app/templates/partials/home.hbs'
+                })
+                .when('/save-the-date', {
+                    controller: 'SaveTheDateController',
+                    controllerAs: 'savethedate',
+                    templateUrl: '/app/templates/partials/saveTheDate.hbs'
                 });
         }
     ]);
