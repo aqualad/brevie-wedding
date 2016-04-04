@@ -10,11 +10,11 @@ weddingControllers
     ])
     .directive('weddingHeader', function() {
         return {
-            templateUrl: '/app/views/directives/header.hbs'
+            templateUrl: '/app/templates/directives/header.hbs'
         };
     })
     .directive('weddingFooter', function() {
         return {
-            templateUrl: '/app/views/directives/footer.hbs'
+            templateUrl: '/app/templates/directives/footer.hbs'
         };
     });
