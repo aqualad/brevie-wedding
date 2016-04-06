@@ -5,8 +5,7 @@ var weddingControllers = angular.module('weddingControllers', []);
 weddingControllers
     .controller('HomeController', ['$scope', '$location',
         function ($scope, $location) {
-            $location.path('/save-the-date');
-            // $scope.welcome = 'Invite You to Celebrate At their Wedding';
+            $scope.welcome = 'Invite You to Celebrate At their Wedding';
         }
     ])
     .controller('SaveTheDateController', ['$scope',
