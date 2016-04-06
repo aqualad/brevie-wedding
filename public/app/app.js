@@ -8,8 +8,10 @@ var weddingApp = angular.module('weddingApp', [
 weddingApp
     .config([
         '$logProvider',
-        '$routeProvider', function ($logProvider, $routeProvider) {
+        '$locationProvider',
+        '$routeProvider', function ($logProvider, $locationProvider, $routeProvider) {
             $logProvider.debugEnabled(true);
+            $locationProvider.html5Mode(true);
 
             $routeProvider
                 .when('/', {
