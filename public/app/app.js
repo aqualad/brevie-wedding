@@ -19,6 +19,36 @@ weddingApp
                     controllerAs: 'home',
                     templateUrl: '/app/templates/partials/home.hbs'
                 })
+                .when('/our-story', {
+                    controller: 'OurStoryController',
+                    controllerAs: 'our-story',
+                    templateUrl: '/app/templates/partials/ourStory.hbs'
+                })
+                .when('/photos', {
+                    controller: 'PhotosController',
+                    controllerAs: 'photos',
+                    templateUrl: '/app/templates/partials/photos.hbs'
+                })
+                .when('/groomsmen', {
+                    controller: 'GroomsmenController',
+                    controllerAs: 'groomsmen',
+                    templateUrl: '/app/templates/partials/groomsmen.hbs'
+                })
+                .when('/bridesmaids', {
+                    controller: 'BridesmaidsController',
+                    controllerAs: 'bridesmaids',
+                    templateUrl: '/app/templates/partials/bridesmaids.hbs'
+                })
+                .when('/gifts', {
+                    controller: 'GiftsController',
+                    controllerAs: 'gifts',
+                    templateUrl: '/app/templates/partials/gifts.hbs'
+                })
+                .when('/rsvp', {
+                    controller: 'RsvpController',
+                    controllerAs: 'rsvp',
+                    templateUrl: '/app/templates/partials/rsvp.hbs'
+                })
                 .when('/save-the-date', {
                     controller: 'SaveTheDateController',
                     controllerAs: 'savethedate',

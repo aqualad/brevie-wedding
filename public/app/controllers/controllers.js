@@ -5,7 +5,37 @@ var weddingControllers = angular.module('weddingControllers', []);
 weddingControllers
     .controller('HomeController', ['$scope', '$location',
         function ($scope, $location) {
-            $scope.welcome = 'Invite You to Celebrate At their Wedding';
+
+        }
+    ])
+    .controller('OurStoryController', ['$scope',
+        function ($scope) {
+
+        }
+    ])
+    .controller('PhotosController', ['$scope',
+        function ($scope) {
+
+        }
+    ])
+    .controller('GroomsmenController', ['$scope',
+        function ($scope) {
+
+        }
+    ])
+    .controller('BridesmaidsController', ['$scope',
+        function ($scope) {
+
+        }
+    ])
+    .controller('GiftsController', ['$scope',
+        function ($scope) {
+
+        }
+    ])
+    .controller('RsvpController', ['$scope',
+        function ($scope) {
+
         }
     ])
     .controller('SaveTheDateController', ['$scope',
