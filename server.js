@@ -11,9 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 app.get('/', function (req, res) {
-    // We only have the save the date page right now
-    res.redirect('/save-the-date');
-    // res.render('index');
+    res.render('index');
 });
 
 app.get('/save-the-date', function (req, res) {
