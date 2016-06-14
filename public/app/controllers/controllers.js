@@ -5,7 +5,7 @@ var weddingControllers = angular.module('weddingControllers', []);
 weddingControllers
     .controller('HomeController', ['$scope', '$location',
         function ($scope, $location) {
-
+            $scope.welcome = "Invite you to celebrate at their wedding"
         }
     ])
     .controller('OurStoryController', ['$scope',
