@@ -1,22 +1,17 @@
 var express = require('express');
-var path = require('path');
 var app = express();
 
-// view engine setup
-app.set('views', path.join(__dirname, 'public/app/templates'));
-app.set('view engine', 'hbs');
+// Get Config Object
+var config = require('./server/config/config');
 
-// Route to static files
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/bower_components', express.static(__dirname + '/bower_components'));
+// Configure Express
+require('./server/config/express')(app, config);
 
-app.get(/.*/, function (req, res) {
-    res.render('index');
-});
+// Connect to DB
+require('./server/config/mongoose')(config);
 
-app.get('/save-the-date', function (req, res) {
-	res.render('index');
-});
+// Configure routes
+require('./server/config/routes')(app);
 
 app.listen(3000, function () {
   console.log('WeddingApp listening on port 3000!');
