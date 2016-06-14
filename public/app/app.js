@@ -53,6 +53,9 @@ weddingApp
                     controller: 'SaveTheDateController',
                     controllerAs: 'savethedate',
                     templateUrl: '/app/templates/partials/saveTheDate.hbs'
+                })
+                .otherwise({
+                    redirectTo: '/'
                 });
         }
     ]);
