@@ -4,7 +4,7 @@
         <span class="hearts"></span>
     </div>
     <div class="small-12 large-10 large-centered columns">
-        <form data-abide method="POST" action="#" class="rsvp-form custom" id="js-form">
+        <form data-abide class="rsvp-form custom" id="js-form" ng-submit="submit()">
             <fieldset class="rsvp-details">
                 <!-- Displays a global alert if required fields are missing -->
                 <div class="js-display"></div>
@@ -14,24 +14,24 @@
                 <div class="row">
                     <div class="large-6 columns">
                         <label for="firstname">First Name</label>
-                        <input type="text" class="input-field" id="firstname" name="firstname" value="" placeholder="Your first name is required" required>
+                        <input type="text" class="input-field" id="firstname" name="firstname" placeholder="Your first name is required" required ng-model="formData.firstName">
                         <small class="error">First Name is required.</small>
                     </div>
                     <div class="large-6 columns">
                         <label for="lastname">Last Name</label>
-                        <input type="text" class="input-field" id="lastname" name="lastname" value="" placeholder="Your last name is required" required>
+                        <input type="text" class="input-field" id="lastname" name="lastname" placeholder="Your last name is required" required ng-model="formData.lastName">
                         <small class="error">Last Name is required.</small>
                     </div>
                 </div>
                 <div class="row">
                     <div class="large-6 columns">
                         <label for="email">Email</label>
-                        <input type="email" class="input-field" id="email" name="email" value="" placeholder="name@yourdomain.com" required>
+                        <input type="email" class="input-field" id="email" name="email" placeholder="name@yourdomain.com" required ng-model="formData.email">
                         <small class="error">Valid Email is required.</small>
                     </div>
                     <div class="large-6 columns">
                         <label for="phone">Phone</label>
-                        <input type="tel" class="input-field" id="phone" name="phone" value="" placeholder="A phone number is optional">
+                        <input type="tel" class="input-field" id="phone" name="phone" placeholder="A phone number is optional" ng-model="formData.phone">
                     </div>
                 </div>
             </fieldset>
@@ -39,15 +39,15 @@
                 <legend>Will you be attending?</legend>
                 <div class="large-6 columns">
                     <label for="radio1">
-                        <input name="radio" type="radio" id="radio1" style="display:none;" value="Accepts with Pleasure!" required>
-                        <span class="custom radio accept"></span>
+                        <input name="radio" type="radio" id="radio1" style="display:none;" value="true" ng-model="rsvp">
+                        <span class="custom radio accept" ng-click="isAttending(true)"></span>
                         <span class="radio-label">Accepts with Pleasure!</span>
                     </label>
                 </div>
                 <div class="large-6 columns">
                     <label for="radio2">
-                        <input name="radio" type="radio" id="radio2" style="display:none;" value="Declines with Regret." required>
-                        <span class="custom radio decline"></span>
+                        <input name="radio" type="radio" id="radio2" style="display:none;" value="false" ng-model="rsvp">
+                        <span class="custom radio decline" ng-click="isAttending(false)"></span>
                         <span class="radio-label">Declines with Regret.</span>
                     </label>
                 </div>
@@ -77,7 +77,8 @@
                     </select>
                 </div>
             </fieldset> -->
-            <button type="submit" class="button radius" id="js-submit-btn">
+            <div class="error" ng-hide='formState.valid'>{{formState.message}}</div>
+            <button type="submit" class="button radius" ng-click="sendRsvp()">
                 <i class="fa fa-envelope"></i>
                 <span class="btn-label">Send</span>
             </button>

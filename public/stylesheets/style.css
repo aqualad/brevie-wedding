@@ -444,7 +444,8 @@ form.custom .dropdown {
 
 [data-abide] .error small.error,
 [data-abide] span.error,
-[data-abide] small.error {
+[data-abide] small.error,
+div.error {
 	display: block;
 	padding: 0.875em 0.25em;
 	margin-top: 1em;
