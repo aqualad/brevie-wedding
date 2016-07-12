@@ -10,12 +10,24 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
-app.get(/.*/, function (req, res) {
+
+// Home
+app.get('/', function (req, res) {
     res.render('index');
 });
 
+// Old Save the Date page
 app.get('/save-the-date', function (req, res) {
-	res.render('index');
+    res.render('index');
+});
+
+// Standalone RSVP Page
+app.get('/rsvp', function (req, res) {
+    res.render('index');
+})
+
+app.get(/.*/, function (req, res) {
+    res.redirect('/');
 });
 
 app.listen(3000, function () {
