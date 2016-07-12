@@ -18,9 +18,12 @@
   },
   "homepage": "https://github.com/aqualad/brevie-wedding#readme",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "bower": "^1.7.7",
     "express": "^4.13.4",
     "hbs": "^4.0.0",
+    "moment": "^2.14.1",
+    "nodemailer": "^2.5.0",
     "nodemon": "^1.9.0"
   }
 }
