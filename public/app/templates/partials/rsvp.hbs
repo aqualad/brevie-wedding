@@ -4,7 +4,7 @@
         <span class="hearts"></span>
     </div>
     <div class="small-12 large-10 large-centered columns">
-        <form data-abide class="rsvp-form custom" id="js-form" ng-submit="submit()">
+        <form data-abide class="rsvp-form custom" id="js-form" ng-submit="submit()" ng-hide="formState.complete">
             <fieldset class="rsvp-details">
                 <!-- Displays a global alert if required fields are missing -->
                 <div class="js-display"></div>
@@ -83,6 +83,10 @@
                 <span class="btn-label">Send</span>
             </button>
         </form>
+        <div ng-show="formState.complete">
+            <h1>Thank you</h1>
+            <h3>Your response has been received</h3>
+        </div>
         <p>
             For any questions please email us:
             <a href="mailto:info@yourdomain.com" title="E-mail Us">

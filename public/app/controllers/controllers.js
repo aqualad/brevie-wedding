@@ -8,8 +8,8 @@ weddingControllers
             $scope.welcome = "Invite you to celebrate at their wedding"
         }
     ])
-    .controller('RsvpController', ['$scope',
-        function ($scope) {
+    .controller('RsvpController', ['$scope', '$http',
+        function ($scope, $http) {
             $scope.formData = {
                 firstName: '',
                 lastName: '',
@@ -20,7 +20,8 @@ weddingControllers
 
             $scope.formState = {
                 valid: true,
-                message: ''
+                message: '',
+                complete: false
             }
 
             $scope.isAttending = function(response) {
@@ -40,7 +41,18 @@ weddingControllers
                     $scope.formState.message = '';
                 }
 
-                // TODO AJAX TO RSVP ENDPOINT
+                // Send the formData to the RSVP endpoint
+                $http({
+                    method: 'POST',
+                    url: '/rsvp',
+                    data: $scope.formData
+                })
+                    .then(function successCallback(response) {
+                        $scope.formState.complete = true;
+                    }, function errorCallback(response) {
+                        $scope.formState.message = 'Something went wrong while trying to submit.  Please contact us directly or try again later.'
+                        $scope.formState.valid = false;
+                    });
             }
 
 

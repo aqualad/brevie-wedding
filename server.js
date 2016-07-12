@@ -16,7 +16,6 @@ app.use('/bower_components', express.static(__dirname + '/bower_components'));
 
 // Middleware for json encoded bodies
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 // Home
 app.get('/', function (req, res) {
@@ -28,11 +27,6 @@ app.get('/save-the-date', function (req, res) {
     res.render('index');
 });
 
-// Standalone RSVP Page
-app.get('/rsvp', function (req, res) {
-    res.render('index');
-})
-
 // Endpoint for RSVP form
 app.post('/rsvp', function (req, res) {
     // Get the client's IP
@@ -40,9 +34,9 @@ app.post('/rsvp', function (req, res) {
 
     // Get form values
     var guest = {
-        first_name: req.body.first_name,
-        last_name: req.body.last_name,
-        name: req.body.first_name + ' ' + req.body.last_name,
+        first_name: req.body.firstName,
+        last_name: req.body.lastName,
+        name: req.body.firstName + ' ' + req.body.lastName,
         email: req.body.email,
         phone_number: req.body.phone,
         rsvp: req.body.rsvp
