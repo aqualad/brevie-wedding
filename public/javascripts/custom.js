@@ -104,8 +104,26 @@ $(document).ready(function() {
 /*  Credit to: http://stiern.com/tutorials/adding-custom-google-maps-to-your-website/
 /*-----------------------------------------------------------------------------------*/
 
+// Location coordinates
+var western_lodge = {
+	lat: 39.492085,
+	long: -82.5239667
+};
+var ash_cave = {
+	lat: 39.49208,
+	long: -82.52396
+};
+var default_template = {
+	lat: 41.38031,
+	long: 2.17416
+};
+
+// Selected location
+var place = western_lodge;
+
 var map;
-var myLatlng = new google.maps.LatLng(41.38031,2.17416); // Specify YOUR coordinates
+
+var myLatlng = new google.maps.LatLng(place.lat, place.long);
 
 var MY_MAPTYPE_ID = 'custom_style';
 
