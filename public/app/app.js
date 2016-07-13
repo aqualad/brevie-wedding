@@ -19,40 +19,47 @@ weddingApp
                     controllerAs: 'home',
                     templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/our-story', {
+                .when('/#our-story', {
                     controller: 'OurStoryController',
                     controllerAs: 'our-story',
-                    templateUrl: '/app/templates/partials/ourStory.hbs'
+                    // templateUrl: '/app/templates/partials/ourStory.hbs'
+                    templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/photos', {
+                .when('/#photos', {
                     controller: 'PhotosController',
                     controllerAs: 'photos',
-                    templateUrl: '/app/templates/partials/photos.hbs'
+                    // templateUrl: '/app/templates/partials/photos.hbs'
+                    templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/groomsmen', {
+                .when('/#groomsmen', {
                     controller: 'GroomsmenController',
                     controllerAs: 'groomsmen',
-                    templateUrl: '/app/templates/partials/groomsmen.hbs'
+                    // templateUrl: '/app/templates/partials/groomsmen.hbs'
+                    templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/bridesmaids', {
+                .when('/#bridesmaids', {
                     controller: 'BridesmaidsController',
                     controllerAs: 'bridesmaids',
-                    templateUrl: '/app/templates/partials/bridesmaids.hbs'
+                    // templateUrl: '/app/templates/partials/bridesmaids.hbs'
+                    templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/gifts', {
+                .when('/#gifts', {
                     controller: 'GiftsController',
                     controllerAs: 'gifts',
-                    templateUrl: '/app/templates/partials/gifts.hbs'
+                    // templateUrl: '/app/templates/partials/gifts.hbs'
+                    templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/rsvp', {
+                .when('/#rsvp', {
                     controller: 'RsvpController',
                     controllerAs: 'rsvp',
-                    templateUrl: '/app/templates/partials/rsvp.hbs'
+                    // templateUrl: '/app/templates/partials/rsvp.hbs'
+                    templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/save-the-date', {
+                .when('/#save-the-date', {
                     controller: 'SaveTheDateController',
                     controllerAs: 'savethedate',
-                    templateUrl: '/app/templates/partials/saveTheDate.hbs'
+                    // templateUrl: '/app/templates/partials/saveTheDate.hbs'
+                    templateUrl: '/app/templates/partials/home.hbs'
                 })
                 .otherwise({
                     redirectTo: '/'
