@@ -10,6 +10,10 @@ weddingControllers
     ])
     .controller('RsvpController', ['$scope', '$http',
         function ($scope, $http) {
+
+            // Call global function to create the Google Map
+            initialize_map();
+
             $scope.formData = {
                 firstName: '',
                 lastName: '',
