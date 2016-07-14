@@ -55,11 +55,10 @@ weddingApp
                     // templateUrl: '/app/templates/partials/rsvp.hbs'
                     templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/#save-the-date', {
+                .when('/save-the-date', {
                     controller: 'SaveTheDateController',
                     controllerAs: 'savethedate',
-                    // templateUrl: '/app/templates/partials/saveTheDate.hbs'
-                    templateUrl: '/app/templates/partials/home.hbs'
+                    templateUrl: '/app/templates/partials/saveTheDate.hbs'
                 })
                 .otherwise({
                     redirectTo: '/'
