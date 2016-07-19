@@ -19,11 +19,16 @@ app.use(bodyParser.json());
 
 // Home
 app.get('/', function (req, res) {
-    res.render('index');
+    res.redirect('save-the-date');
 });
 
 // Old Save the Date page
 app.get('/save-the-date', function (req, res) {
+    res.render('save-the-date');
+});
+
+// Hidden full-site
+app.get('/ittybittybaby/ittybittyboat', function (req, res) {
     res.render('index');
 });
 

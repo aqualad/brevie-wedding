@@ -14,7 +14,7 @@ weddingApp
             $locationProvider.html5Mode(true);
 
             $routeProvider
-                .when('/', {
+                .when('/ittybittybaby/ittybittyboat', {
                     controller: 'HomeController',
                     controllerAs: 'home',
                     templateUrl: '/app/templates/partials/home.hbs'
