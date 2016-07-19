@@ -28,6 +28,10 @@ weddingControllers
                 complete: false
             }
 
+            if ( $.cookie('rsvp') === "true" ) {
+                $scope.formState.complete = true;
+            }
+
             $scope.isAttending = function(response) {
                 $scope.formData.rsvp = response ? 'true' : 'false';
                 $scope.formState.valid = true;
@@ -52,7 +56,12 @@ weddingControllers
                     data: $scope.formData
                 })
                     .then(function successCallback(response) {
+                        // Set a cookie to avoid duplicate RSVP
+                        $.cookie('rsvp', "true", { expires: 365 });
+
+                        // Display a success message
                         $scope.formState.complete = true;
+
                     }, function errorCallback(response) {
                         $scope.formState.message = 'Something went wrong while trying to submit.  Please contact us directly or try again later.'
                         $scope.formState.valid = false;
