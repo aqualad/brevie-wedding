@@ -39,7 +39,7 @@ app.post('/rsvp', function (req, res) {
         name: req.body.firstName + ' ' + req.body.lastName,
         email: req.body.email,
         phone_number: req.body.phone,
-        rsvp: req.body.rsvp
+        rsvp: req.body.rsvp === "true" ? true : false
     }
 
     // Data Validation
