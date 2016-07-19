@@ -25,6 +25,9 @@
 	.top-bar {
 		margin-bottom: 0px!important;
 	}
+	#main {
+		margin-top: 45px;
+	}
 
 	.videoWrapper {
 		position: relative;
@@ -52,6 +55,9 @@
 
 	.top-bar {
 		margin-bottom: 0px!important;
+	}
+	#main {
+		margin-top: 45px;
 	}
 
 	/*==== The Logo ====*/
@@ -179,6 +185,9 @@
 	}
 	.top-bar-section ul li {
 		border: none;
+	}
+	#main {
+		margin-top: 45px;
 	}
 
 	/*==== Save the Date Video ====*/
