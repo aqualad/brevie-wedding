@@ -34,7 +34,7 @@
         <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Libraries -->
         <script src="javascripts/vendor/jquery.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDNDZ6NJ8NsCdrly2LBOlwbVljko9uOsKI"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <script src="javascripts/foundation.min.js"></script>
         <script src="javascripts/foundation/foundation.abide.js"></script>
         <script src="javascripts/vendor/jquery.backstretch.min.js"></script>
@@ -50,6 +50,10 @@
         <!-- Application code -->
         <script src="/app/app.js"></script>
         <script src="/app/controllers/controllers.js"></script>
+
+        <script>
+            $(document).foundation();
+        </script>
     </head>
     <body ng-app="weddingApp">
         <!-- START Navigation for mobile devices -->
@@ -82,20 +86,21 @@
                 <div class="side-nav-container nav">
                     <div class="shadow"></div>
                     <h1 class="logo">
-                        <a href="#home">
+                        <a href="#section-0">
                             <img class="logo" src="images/wedding_monogram.png">
                         </a>
                     </h1>
                     <nav class="hide-for-large-down">
                         <ul class="side-nav primary-nav">
-                            <li><a href="#photos">Photos</a></li>
-                            <li><a href="#ceremony">Ceremony</a></li>
-                            <li><a href="#reception">Reception</a></li>
-                            <li><a href="#gifts">Gifts</a></li>
-                            <li><a href="#rsvp">Rsvp</a></li>
-                            <!-- Removed until the link bug is fixed (links to other pages don't do anything)
-                             <li><a href="/save-the-date">Save the Date</a></li>
-                             -->
+                        <!--
+                            <li><a href="#section-1">Our Story</a></li>
+                            <li><a href="#section-2">Photos</a></li>
+                            <li><a href="#section-3">Groomsmen</a></li>
+                            <li><a href="#section-4">Bridesmaids</a></li>
+                            <li><a href="#section-5">Gifts</a></li>
+                            <li><a href="#section-6">Rsvp</a></li>
+                        -->
+                            <li><a href="/save-the-date">Save the Date</a></li>
                         </ul>
                     </nav>
                     <span class="ribbon"></span>
@@ -103,7 +108,7 @@
             </aside>
 
             <div id="main" class="large-9 columns">
-                <ng-view></ng-view>
+                <div class="ng-view"></div>
             </div><!--END main-->
         </div><!--END .row-->
     </body>

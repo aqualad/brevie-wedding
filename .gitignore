@@ -34,3 +34,6 @@ npm-debug.log
 
 # Hidden Mac files
 .DS_Store
+
+# Config files with secret info
+secret/

@@ -1,5 +1,6 @@
-<div id="section-0">
-    <img src="images/hero-unit.jpg" alt="Placeholder" class="hero-unit fade-in" />
+<wedding-header></wedding-header>
+<div id="home">
+    <img src="images/hi-res/main-compressed.jpg" alt="Placeholder" class="hero-unit fade-in" />
     <div class="row divider date-section">
         <div class="large-6 small-12 columns">
             <div class="date-container col-1">
@@ -9,17 +10,22 @@
         </div>
         <div class="large-6 small-12 columns">
             <div class="date-container col-2">
-                <span class="day-time">Five O’Clock in the evening</span>
-                <span class="day-location accent">Sheraton Towers</span>
-                <span class="day-address">123 Las Ramblas, Barcelona</span>
-                <span class="day-meta">dinner + dancing to follow</span>
+                <span class="day-time">Six O’Clock in the evening</span>
+                <span class="day-location accent">The Western Lodge</span>
+                <span class="day-address">16736 Rocky Fork Road, Logan</span>
+                <span class="day-meta">dinner + drinks + dancing</span>
             </div>
         </div>
     </div><!-- END .row -->
 </div><!-- END #section-0 -->
 
 <div class="callout">
-    <a href="#section-6" class="button radius js-scroll">
+    <a href="#rsvp" class="button radius js-scroll">
         <i class="fa fa-envelope"></i> <span class="btn-label">Click here to RSVP today</span>
     </a>
 </div><!-- END .callout -->
+<ng-include src="'app/templates/partials/photos.hbs'"></ng-include>
+<ng-include src="'app/templates/partials/ceremony.hbs'"></ng-include>
+<ng-include src="'app/templates/partials/reception.hbs'"></ng-include>
+<ng-include src="'app/templates/partials/gifts.hbs'"></ng-include>
+<ng-include src="'app/templates/partials/rsvp.hbs'"></ng-include>

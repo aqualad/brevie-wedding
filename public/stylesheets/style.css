@@ -203,6 +203,10 @@ div[id*="section-"] {
 .btn-label {
 	margin-left: 0.5em;
 }
+.flex-caption span {
+	display: block;
+	margin: 1em 0;
+}
 
 /*==== Block Grid ====*/
 
@@ -444,7 +448,8 @@ form.custom .dropdown {
 
 [data-abide] .error small.error,
 [data-abide] span.error,
-[data-abide] small.error {
+[data-abide] small.error,
+div.error {
 	display: block;
 	padding: 0.875em 0.25em;
 	margin-top: 1em;
@@ -548,7 +553,7 @@ label.error {
 	height: auto;
 }
 .overlay-label {
-	background-color: rgba( 222, 103, 95, 0.7);
+	background-color: rgba( 147, 186, 163, 0.7);
 	display: inline;
 	left: 0px;
 	text-transform: uppercase;
@@ -576,7 +581,7 @@ label.error {
 /* Navigation */
 
 .top-bar {
-	position: relative;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 997;

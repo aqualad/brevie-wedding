@@ -104,12 +104,31 @@ $(document).ready(function() {
 /*  Credit to: http://stiern.com/tutorials/adding-custom-google-maps-to-your-website/
 /*-----------------------------------------------------------------------------------*/
 
-var map;
-var myLatlng = new google.maps.LatLng(41.38031,2.17416); // Specify YOUR coordinates
 
-var MY_MAPTYPE_ID = 'custom_style';
+function initialize_map() {
 
-function initialize() {
+	var map;
+
+	var MY_MAPTYPE_ID = 'custom_style';
+
+	// Location coordinates
+	var western_lodge = {
+		lat: 39.4921421,
+		long: -82.5222704
+	};
+	var ash_cave = {
+		lat: 39.49208,
+		long: -82.52396
+	};
+	var default_template = {
+		lat: 41.38031,
+		long: 2.17416
+	};
+
+	// Selected location
+	var place = western_lodge;
+
+	var myLatlng = new google.maps.LatLng(place.lat, place.long);
 
 	/*----------------------------------------------------------------------------*/
 	/* Creates a custom color scheme for map
@@ -164,14 +183,11 @@ function initialize() {
 	var image = new google.maps.MarkerImage("images/map-marker@2x.png", null, null, null, new google.maps.Size(55,57));
 
 	// Includes custom marker on map
-	var myLatLng = new google.maps.LatLng(41.38031,2.17416);
 	var beachMarker = new google.maps.Marker({
-		position: myLatLng,
+		position: myLatlng,
 		map: map,
 		icon: image
 	});
 
 	map.mapTypes.set(MY_MAPTYPE_ID, customMapType);
 }
-
-google.maps.event.addDomListener(window, 'load', initialize);

@@ -14,7 +14,7 @@ weddingApp
             $locationProvider.html5Mode(true);
 
             $routeProvider
-                .when('/', {
+                .when('/ittybittybaby/ittybittyboat', {
                     controller: 'HomeController',
                     controllerAs: 'home',
                     templateUrl: '/app/templates/partials/home.hbs'
@@ -23,6 +23,9 @@ weddingApp
                     controller: 'SaveTheDateController',
                     controllerAs: 'savethedate',
                     templateUrl: '/app/templates/partials/saveTheDate.hbs'
+                })
+                .otherwise({
+                    redirectTo: '/'
                 });
         }
     ]);
