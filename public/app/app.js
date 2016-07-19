@@ -19,12 +19,6 @@ weddingApp
                     controllerAs: 'home',
                     templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/#our-story', {
-                    controller: 'OurStoryController',
-                    controllerAs: 'our-story',
-                    // templateUrl: '/app/templates/partials/ourStory.hbs'
-                    templateUrl: '/app/templates/partials/home.hbs'
-                })
                 .when('/#photos', {
                     controller: 'PhotosController',
                     controllerAs: 'photos',

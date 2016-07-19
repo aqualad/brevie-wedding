@@ -58,13 +58,6 @@ weddingControllers
                         $scope.formState.valid = false;
                     });
             }
-
-
-        }
-    ])
-    .controller('OurStoryController', ['$scope',
-        function ($scope) {
-
         }
     ])
     .controller('PhotosController', ['$scope',
