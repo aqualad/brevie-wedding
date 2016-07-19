@@ -203,6 +203,10 @@ div[id*="section-"] {
 .btn-label {
 	margin-left: 0.5em;
 }
+.flex-caption span {
+	display: block;
+	margin: 1em 0;
+}
 
 /*==== Block Grid ====*/
 

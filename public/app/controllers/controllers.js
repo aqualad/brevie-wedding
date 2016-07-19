@@ -72,12 +72,12 @@ weddingControllers
 
         }
     ])
-    .controller('GroomsmenController', ['$scope',
+    .controller('CeremonyController', ['$scope',
         function ($scope) {
 
         }
     ])
-    .controller('BridesmaidsController', ['$scope',
+    .controller('ReceptionController', ['$scope',
         function ($scope) {
 
         }

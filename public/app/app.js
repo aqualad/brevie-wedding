@@ -31,18 +31,6 @@ weddingApp
                     // templateUrl: '/app/templates/partials/photos.hbs'
                     templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/#groomsmen', {
-                    controller: 'GroomsmenController',
-                    controllerAs: 'groomsmen',
-                    // templateUrl: '/app/templates/partials/groomsmen.hbs'
-                    templateUrl: '/app/templates/partials/home.hbs'
-                })
-                .when('/#bridesmaids', {
-                    controller: 'BridesmaidsController',
-                    controllerAs: 'bridesmaids',
-                    // templateUrl: '/app/templates/partials/bridesmaids.hbs'
-                    templateUrl: '/app/templates/partials/home.hbs'
-                })
                 .when('/#gifts', {
                     controller: 'GiftsController',
                     controllerAs: 'gifts',
