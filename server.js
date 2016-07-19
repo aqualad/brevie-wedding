@@ -49,7 +49,7 @@ app.post('/rsvp', function (req, res) {
     var guestlist = require('./secret/guestlist');
 
     // Verify that we can match the RSVP to a guest
-    if ( guestlist.last_names.indexOf(guest.last_name) === -1 ) {
+    if ( guestlist.last_names.indexOf(guest.last_name.toLowerCase()) === -1 ) {
         return res.status(401).send( { field: 'last_name'} );
     }
 
