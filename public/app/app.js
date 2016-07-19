@@ -19,24 +19,6 @@ weddingApp
                     controllerAs: 'home',
                     templateUrl: '/app/templates/partials/home.hbs'
                 })
-                .when('/#photos', {
-                    controller: 'PhotosController',
-                    controllerAs: 'photos',
-                    // templateUrl: '/app/templates/partials/photos.hbs'
-                    templateUrl: '/app/templates/partials/home.hbs'
-                })
-                .when('/#gifts', {
-                    controller: 'GiftsController',
-                    controllerAs: 'gifts',
-                    // templateUrl: '/app/templates/partials/gifts.hbs'
-                    templateUrl: '/app/templates/partials/home.hbs'
-                })
-                .when('/#rsvp', {
-                    controller: 'RsvpController',
-                    controllerAs: 'rsvp',
-                    // templateUrl: '/app/templates/partials/rsvp.hbs'
-                    templateUrl: '/app/templates/partials/home.hbs'
-                })
                 .when('/save-the-date', {
                     controller: 'SaveTheDateController',
                     controllerAs: 'savethedate',
